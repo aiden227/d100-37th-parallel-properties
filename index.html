@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37th Parallel Properties | Tax-Advantaged Passive Income from Multifamily Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #123854;
+            --green: #3F7318;
+            --green-hover: #345F14;
+            --dark-navy: #0D2A3E;
+            --charcoal: #333333;
+            --light-gray: #F4F4F4;
+            --muted: #666666;
+        }
+        body { font-family: 'Figtree', sans-serif; color: var(--charcoal); }
+        .bg-navy { background-color: var(--navy); }
+        .bg-dark-navy { background-color: var(--dark-navy); }
+        .bg-green { background-color: var(--green); }
+        .text-navy { color: var(--navy); }
+        .text-green { color: var(--green); }
+        .text-muted { color: var(--muted); }
+        .border-navy { border-color: var(--navy); }
+        .btn-green { background-color: var(--green); color: #fff; transition: all .3s ease; }
+        .btn-green:hover { background-color: var(--green-hover); transform: translateY(-1px); }
+        .hero-overlay { background: linear-gradient(rgba(18,56,84,0.92), rgba(13,42,62,0.88)); }
+        .step-content { display: none; }
+        .step-content.active { display: block; animation: slideUp .4s ease-out; }
+        @keyframes slideUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        .option-btn { transition: all .2s ease; }
+        .option-btn:hover { border-color: var(--navy); background: #EBF5FF; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+        .faq-answer.open { max-height: 500px; }
+        html { scroll-behavior: smooth; }
+        @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+        .fade-in { animation: fadeIn .6s ease-out; }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="images/37P-Logo_150px.png" alt="37th Parallel Properties" class="h-8" style="filter: brightness(0) saturate(100%) invert(17%) sepia(49%) saturate(1066%) hue-rotate(167deg) brightness(97%) contrast(92%);">
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#how-it-works" class="text-sm font-semibold text-navy hover:opacity-75">How It Works</a>
+            <a href="#track-record" class="text-sm font-semibold text-navy hover:opacity-75">Track Record</a>
+            <a href="#faq" class="text-sm font-semibold text-navy hover:opacity-75">FAQ</a>
+            <a href="#qualification-form" class="btn-green px-5 py-2 rounded text-sm font-bold uppercase tracking-wider">Schedule a Call</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="images/C179660-Greys-Harbor-at-Lake-Norman-4-1-copy.webp" alt="37th Parallel Property" class="w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 text-center">
+        <span class="inline-block px-3 py-1 rounded bg-white/10 text-xs font-bold uppercase tracking-widest mb-6 border border-white/20">Accredited Investors Only</span>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 max-w-5xl mx-auto">Earn Tax-Advantaged Passive Income from Multifamily Real Estate</h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
+            $1.1B+ in transactions since 2008. 26.7% average annualized gross returns. <span class="text-white font-bold">100% profitable track record</span> across 16 realized deals. Schedule a 15-minute introductory call to learn how our current offerings fit your portfolio.
+        </p>
+
+        <!-- VSL Placeholder -->
+        <div class="max-w-4xl mx-auto mb-12">
+            <div class="aspect-video bg-black/60 rounded-2xl shadow-2xl overflow-hidden border-4 border-white/10 flex items-center justify-center group cursor-pointer">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-sm font-bold tracking-widest uppercase text-white/80">Watch the Investor Overview</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualification Form -->
+        <div id="qualification-form" class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 text-left" style="color: var(--charcoal);">
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2" style="color: var(--navy);">
+                        <span>Investor Qualification</span>
+                        <span id="step-indicator">Step 1 of 5</span>
+                    </div>
+                    <div class="w-full h-1 bg-gray-100 rounded-full">
+                        <div id="progress-bar" class="h-full rounded-full transition-all duration-500" style="width:20%; background:var(--navy);"></div>
+                    </div>
+                </div>
+                <form id="multi-step-form">
+                    <!-- Step 1 -->
+                    <div id="step-1" class="step-content active">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">Are you an accredited investor?</h3>
+                        <p class="text-muted mb-5 text-sm">Net worth of $1M+ (excluding primary residence) or annual income of $200K+.</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Yes, I am accredited</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">No, but I am close</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">I am not sure</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div id="step-2" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">How much are you looking to invest in the next 12 months?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Under $50,000</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$50,000 to $100,000</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$100,000 to $250,000</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$250,000+</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div id="step-3" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">What is your primary investment goal?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Tax-advantaged passive income</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Portfolio diversification away from stocks</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Long-term wealth preservation</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">All of the above</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div id="step-4" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">When are you looking to make your next investment?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Immediately</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Within 30 days</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Within 90 days</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Just exploring</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <!-- Step 5: Contact -->
+                    <div id="step-5" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">Almost there. How can we reach you?</h3>
+                        <p class="text-muted mb-5 text-sm">A member of our Investor Relations team will confirm your introductory call.</p>
+                        <div class="grid grid-cols-2 gap-3 mb-3">
+                            <input type="text" placeholder="First Name" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:border-navy focus:outline-none text-sm">
+                            <input type="text" placeholder="Last Name" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:border-navy focus:outline-none text-sm">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:border-navy focus:outline-none text-sm mb-3">
+                        <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:border-navy focus:outline-none text-sm mb-5">
+                        <button type="button" onclick="window.location.href='/thankyou'" class="btn-green w-full py-4 rounded-xl text-base font-bold uppercase tracking-wider">Schedule My Call</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Social Proof Bar -->
+<section class="bg-white py-10 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-8">
+            <div><p class="text-3xl md:text-4xl font-bold text-navy">$1.1B+</p><p class="text-sm text-muted mt-1">Transactions Closed</p></div>
+            <div><p class="text-3xl md:text-4xl font-bold text-navy">26.7%</p><p class="text-sm text-muted mt-1">Avg. Annualized Return*</p></div>
+            <div><p class="text-3xl md:text-4xl font-bold text-navy">2.10x</p><p class="text-sm text-muted mt-1">Avg. MOIC*</p></div>
+            <div><p class="text-3xl md:text-4xl font-bold text-navy">100%</p><p class="text-sm text-muted mt-1">Profitable Track Record</p></div>
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-6 opacity-70">
+            <img src="images/Accredited-Management-Organization-AMO-Logo.png" alt="AMO" class="h-10">
+            <img src="images/NAA-Logo.png" alt="NAA" class="h-10">
+            <img src="images/NMHC_LOGO3D_MASTER_RGB.png" alt="NMHC" class="h-10">
+            <img src="images/INC-5000-logo_2023.png" alt="Inc. 5000" class="h-10">
+        </div>
+        <p class="text-xs text-center text-muted mt-4">*Gross returns on realized investments. Past performance is not indicative of future results.</p>
+    </div>
+</section>
+
+<!-- Founder Section -->
+<section class="py-16 md:py-20 bg-light-gray" style="background:var(--light-gray);">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <img src="images/CD_2024-Headshot.jpg" alt="Chad Doty, Managing Partner" class="w-48 h-48 rounded-full object-cover mx-auto md:mx-0 mb-6 shadow-lg border-4 border-white">
+                <img src="images/dan-headshot-2025-1-scaled.jpg" alt="Dan Chamberlain, Managing Partner" class="w-36 h-36 rounded-full object-cover mx-auto md:mx-0 md:ml-16 -mt-8 shadow-lg border-4 border-white relative z-10">
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">Built by Operators with 100+ Years of Combined Experience</h2>
+                <p class="text-muted leading-relaxed mb-4">Chad Doty and Dan Chamberlain founded 37th Parallel Properties in 2008. While most investors were running from real estate during the financial crisis, they recognized the Sunbelt was positioned for decades of growth.</p>
+                <p class="text-muted leading-relaxed mb-6">Since then, they have built a team of multifamily specialists, closed over $1.1 billion in transactions, and delivered a 100% profitable track record. The firm holds the AMO accreditation and has been named to the Inc. 5000 list six consecutive years.</p>
+                <blockquote class="border-l-4 pl-4 italic text-navy font-semibold" style="border-color:var(--green);">"Our investors trust us with their capital because we have earned it, one profitable deal at a time, for 16 years."</blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-12">Our Investment Approach</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">1</div>
+                <h3 class="text-xl font-bold text-navy mb-2">Demographic-Centered Market Selection</h3>
+                <p class="text-muted">We invest in Sunbelt markets with exceptional population growth, employment growth, top-rated schools, and structural supply constraints that create organic rent growth.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">2</div>
+                <h3 class="text-xl font-bold text-navy mb-2">Value-Creation Acquisitions</h3>
+                <p class="text-muted">We acquire apartment communities that are mismanaged, mispriced, or undercapitalized. Our in-house team executes targeted renovations and operational improvements.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">3</div>
+                <h3 class="text-xl font-bold text-navy mb-2">Institutional Asset Management</h3>
+                <p class="text-muted">We manage everything in-house with our AMO-accredited team. Quarterly reporting through Juniper Square gives you full visibility into your investment.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <div class="w-12 h-12 bg-navy rounded-lg flex items-center justify-center text-white font-bold text-lg mb-4">4</div>
+                <h3 class="text-xl font-bold text-navy mb-2">Exit Liquidity Focus</h3>
+                <p class="text-muted">We invest in large, established markets with deep institutional buyer demand. That exit liquidity provides the margin of safety behind our 100% profitable track record.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Track Record / Case Studies -->
+<section id="track-record" class="py-16 md:py-20 bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Real Results from Real Investments</h2>
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white/10 rounded-2xl overflow-hidden border border-white/10">
+                <img src="images/SQFT-8515-scaled.jpg" alt="Presidio, Dallas" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Presidio, Allen, TX</h3>
+                    <p class="text-gray-300 text-sm mb-4">202 Units | Oct 2018 to Aug 2022</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><p class="text-2xl font-bold text-green">2.58x</p><p class="text-xs text-gray-400">MOIC (Gross)</p></div>
+                        <div><p class="text-2xl font-bold text-green">40.7%</p><p class="text-xs text-gray-400">Annualized Return</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/10 rounded-2xl overflow-hidden border border-white/10">
+                <img src="images/Pool-2.jpg" alt="Villas of Henderson Pass" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Villas of Henderson Pass</h3>
+                    <p class="text-gray-300 text-sm mb-4">228 Units | Sep 2016 to May 2022</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><p class="text-2xl font-bold text-green">3.00x</p><p class="text-xs text-gray-400">MOIC (Gross)</p></div>
+                        <div><p class="text-2xl font-bold text-green">35.3%</p><p class="text-xs text-gray-400">Annualized Return</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white/10 rounded-2xl overflow-hidden border border-white/10">
+                <img src="images/Exterior-2_Cropped.jpg" alt="Fund I Portfolio" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-1">Fund I Portfolio</h3>
+                    <p class="text-gray-300 text-sm mb-4">2,145 Units | 6 Southeast Markets</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><p class="text-2xl font-bold text-green">$434M</p><p class="text-xs text-gray-400">Portfolio NAV</p></div>
+                        <div><p class="text-2xl font-bold text-green">21%</p><p class="text-xs text-gray-400">Avg. Rent Growth</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs text-center text-gray-400">All returns are gross returns on realized investments. Past performance is not indicative of future results. All investments carry risk including the potential loss of principal.</p>
+    </div>
+</section>
+
+<!-- Why Multifamily -->
+<section class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-12">Why Institutional Investors Choose Multifamily</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-2">Quarterly Passive Income</h3>
+                <p class="text-muted text-sm">Consistent cash flow through quarterly distributions. Private real estate income has exceeded other asset classes over the past 15 years.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-2">Zero Stock Market Correlation</h3>
+                <p class="text-muted text-sm">Private multifamily has exhibited low correlation to equity and fixed income markets over the last 20 years. True portfolio diversification.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-7 h-7 text-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-2">Significant Tax Advantages</h3>
+                <p class="text-muted text-sm">Depreciation deductions significantly lower taxable income. Capital gains can be deferred through 1031 exchanges. Consult your tax advisor.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 md:py-20 relative text-white">
+    <div class="absolute inset-0 z-0">
+        <img src="images/28-DJI_0568-scaled.jpg" alt="Property Aerial" class="w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Your Next Step: Schedule a 15-Minute Introductory Call</h2>
+        <p class="text-lg text-gray-200 mb-10 max-w-2xl mx-auto">A member of our Investor Relations team will walk you through our current offerings, answer your questions, and help you determine whether 37th Parallel is the right fit. No pressure. No obligation.</p>
+        <!-- Second Form -->
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 text-left" style="color:var(--charcoal);">
+                <div class="mb-6">
+                    <div class="flex justify-between text-xs font-bold uppercase tracking-widest mb-2" style="color:var(--navy);">
+                        <span>Investor Qualification</span>
+                        <span id="step-indicator2">Step 1 of 5</span>
+                    </div>
+                    <div class="w-full h-1 bg-gray-100 rounded-full">
+                        <div id="progress-bar2" class="h-full rounded-full transition-all duration-500" style="width:20%; background:var(--navy);"></div>
+                    </div>
+                </div>
+                <form id="multi-step-form2">
+                    <div id="step2-1" class="step-content active">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">Are you an accredited investor?</h3>
+                        <p class="text-muted mb-5 text-sm">Net worth of $1M+ (excluding primary residence) or annual income of $200K+.</p>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Yes, I am accredited</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">No, but I am close</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(2)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">I am not sure</span><svg class="w-5 h-5 text-gray-300 group-hover:text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <div id="step2-2" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">How much are you looking to invest?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Under $50,000</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$50,000 to $100,000</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$100,000 to $250,000</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(3)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">$250,000+</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <div id="step2-3" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">What is your primary investment goal?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Tax-advantaged passive income</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Portfolio diversification</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Long-term wealth preservation</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(4)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">All of the above</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <div id="step2-4" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">When are you looking to invest?</h3>
+                        <div class="space-y-3">
+                            <button type="button" onclick="goToStep2(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Immediately</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Within 30 days</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Within 90 days</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                            <button type="button" onclick="goToStep2(5)" class="option-btn w-full text-left p-4 rounded-xl border-2 border-gray-100 flex justify-between items-center group"><span class="font-semibold">Just exploring</span><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+                        </div>
+                    </div>
+                    <div id="step2-5" class="step-content">
+                        <h3 class="text-2xl font-bold mb-3 text-navy">How can we reach you?</h3>
+                        <div class="grid grid-cols-2 gap-3 mb-3">
+                            <input type="text" placeholder="First Name" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:outline-none text-sm">
+                            <input type="text" placeholder="Last Name" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:outline-none text-sm">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:outline-none text-sm mb-3">
+                        <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-xl border-2 border-gray-100 focus:outline-none text-sm mb-5">
+                        <button type="button" onclick="window.location.href='/thankyou'" class="btn-green w-full py-4 rounded-xl text-base font-bold uppercase tracking-wider">Schedule My Call</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-12">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">What is the minimum investment?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">Minimum investments vary by offering. Typical minimums range from $50,000 to $100,000. We will discuss this on the introductory call based on your goals and the available offerings.</p></div>
+            </div>
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">What are the target returns?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">Our 16 realized investments have averaged a 26.7% annualized gross return and a 2.10x MOIC. Current offerings have their own projected return profiles. Past performance is not indicative of future results.</p></div>
+            </div>
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">How long is the typical hold period?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">Most investments are held for 3 to 7 years. During this time, you receive quarterly distributions. At exit, you receive your share of the capital appreciation.</p></div>
+            </div>
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">Do I need to be an accredited investor?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">Yes. Our offerings are available to accredited investors only. This means a net worth of $1 million or more (excluding primary residence) or annual income of $200,000 or more ($300,000 jointly).</p></div>
+            </div>
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">How do I monitor my investment?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">All investors receive secure access to the Juniper Square investor portal with real-time account visibility, quarterly performance reports, distribution statements, and K-1 tax documents.</p></div>
+            </div>
+            <div class="border border-gray-200 rounded-xl">
+                <button onclick="toggleFaq(this)" class="w-full text-left p-5 flex justify-between items-center"><span class="font-semibold text-navy">Are the returns tax-advantaged?</span><svg class="w-5 h-5 text-navy transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="faq-answer px-5 pb-5"><p class="text-muted text-sm">Yes. Multifamily investments offer significant tax advantages through depreciation deductions that pass through on the K-1, potentially lowering your taxable income. Consult your tax advisor for your specific situation.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark-navy text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <img src="images/37P-Logo_150px.png" alt="37th Parallel Properties" class="h-8 mb-4">
+                <p class="text-gray-400 text-sm">Multifamily real estate investment firm specializing in institutional-quality apartment communities in the South and Southeast US. Founded 2008. Richmond, Virginia.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Contact</h4>
+                <p class="text-gray-400 text-sm">3200 Rockbridge Street, Suite 200</p>
+                <p class="text-gray-400 text-sm">Richmond, VA 23230</p>
+                <p class="text-gray-400 text-sm mt-2">invest@37parallel.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Connect</h4>
+                <a href="https://www.linkedin.com/company/37parallel" class="text-gray-400 text-sm hover:text-white block">LinkedIn</a>
+                <a href="https://37parallel.com" class="text-gray-400 text-sm hover:text-white block mt-1">37parallel.com</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-6">
+            <p class="text-xs text-gray-500 leading-relaxed">This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any security. All investments involve risk, including the potential loss of principal. Past performance is not indicative of future results. All performance figures cited are gross returns on realized investments. Securities offered through applicable exemptions. Consult with your financial advisor before making any investment decision.</p>
+            <p class="text-xs text-gray-500 mt-3">2026 37th Parallel Properties. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Form 1 (Hero)
+function goToStep(step) {
+    for (let i = 1; i <= 5; i++) {
+        const el = document.getElementById('step-' + i);
+        if (el) el.classList.remove('active');
+    }
+    const target = document.getElementById('step-' + step);
+    if (target) target.classList.add('active');
+    document.getElementById('step-indicator').textContent = 'Step ' + step + ' of 5';
+    document.getElementById('progress-bar').style.width = (step * 20) + '%';
+}
+
+// Form 2 (Bottom CTA)
+function goToStep2(step) {
+    for (let i = 1; i <= 5; i++) {
+        const el = document.getElementById('step2-' + i);
+        if (el) el.classList.remove('active');
+    }
+    const target = document.getElementById('step2-' + step);
+    if (target) target.classList.add('active');
+    document.getElementById('step-indicator2').textContent = 'Step ' + step + ' of 5';
+    document.getElementById('progress-bar2').style.width = (step * 20) + '%';
+}
+
+// FAQ Accordion
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('svg');
+    answer.classList.toggle('open');
+    icon.style.transform = answer.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0)';
+}
+</script>
+</body>
+</html>

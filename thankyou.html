@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Are In | 37th Parallel Properties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #123854;
+            --green: #3F7318;
+            --green-hover: #345F14;
+            --dark-navy: #0D2A3E;
+            --charcoal: #333333;
+            --light-gray: #F4F4F4;
+            --muted: #666666;
+        }
+        body { font-family: 'Figtree', sans-serif; color: var(--charcoal); }
+        .bg-navy { background-color: var(--navy); }
+        .bg-dark-navy { background-color: var(--dark-navy); }
+        .bg-green { background-color: var(--green); }
+        .text-navy { color: var(--navy); }
+        .text-green { color: var(--green); }
+        .text-muted { color: var(--muted); }
+        .border-navy { border-color: var(--navy); }
+        .btn-green { background-color: var(--green); color: #fff; transition: all .3s ease; }
+        .btn-green:hover { background-color: var(--green-hover); transform: translateY(-1px); }
+        .hero-overlay { background: linear-gradient(rgba(18,56,84,0.92), rgba(13,42,62,0.88)); }
+        html { scroll-behavior: smooth; }
+        @keyframes fadeIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+        .fade-in { animation: fadeIn .6s ease-out; }
+        @keyframes checkPop { 0% { transform:scale(0); } 60% { transform:scale(1.2); } 100% { transform:scale(1); } }
+        .check-pop { animation: checkPop .5s ease-out; }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-100 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img src="images/37P-Logo_150px.png" alt="37th Parallel Properties" class="h-8" style="filter: brightness(0) saturate(100%) invert(17%) sepia(49%) saturate(1066%) hue-rotate(167deg) brightness(97%) contrast(92%);">
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-green border border-green/30 bg-green/5">
+                <span class="w-2 h-2 rounded-full bg-green"></span>
+                Application Received
+            </span>
+        </div>
+    </div>
+</nav>
+
+<!-- Confirmation Hero -->
+<header class="relative text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <img src="images/28-DJI_0568-scaled.jpg" alt="37th Parallel Property" class="w-full h-full object-cover">
+        <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-14 text-center">
+        <!-- Confirmation Check -->
+        <div class="check-pop w-16 h-16 rounded-full bg-green flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">You Are In. Watch This Before Your Call.</h1>
+        <p class="text-lg text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">Your introductory call with 37th Parallel's Investor Relations team has been requested. A member of our team will confirm your appointment within 24 hours.</p>
+
+        <!-- Thank You Video Placeholder -->
+        <div class="max-w-3xl mx-auto mb-10">
+            <div class="aspect-video bg-black/60 rounded-2xl shadow-2xl overflow-hidden border-4 border-white/10 flex items-center justify-center group cursor-pointer">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <p class="text-sm font-bold tracking-widest uppercase text-white/80">A Message from Chad Doty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What Happens Next -->
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 p-8">
+                <h3 class="text-lg font-bold uppercase tracking-widest mb-6">What Happens Next</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green flex items-center justify-center text-white text-sm font-bold">1</div>
+                        <div>
+                            <p class="font-bold text-sm mb-1">Right Now</p>
+                            <p class="text-sm text-gray-300">Watch the video above and review the resources below.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green flex items-center justify-center text-white text-sm font-bold">2</div>
+                        <div>
+                            <p class="font-bold text-sm mb-1">Within 24 Hours</p>
+                            <p class="text-sm text-gray-300">You will receive an email confirming your call date, time, and join link.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green flex items-center justify-center text-white text-sm font-bold">3</div>
+                        <div>
+                            <p class="font-bold text-sm mb-1">Before the Call</p>
+                            <p class="text-sm text-gray-300">We will send you our full track record, case studies, and preparation materials.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- How to Get the Most From Your Introductory Call -->
+<section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-12">How to Get the Most From Your Introductory Call</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <div class="w-14 h-14 bg-navy rounded-full flex items-center justify-center mx-auto mb-5">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Step 1: Review Our Track Record</h3>
+                <p class="text-muted text-sm leading-relaxed">We have made every deal-by-deal result available at 37parallel.com/track-record. Sixteen realized deals. Average 2.10x MOIC. 26.7% average annualized gross return. 100% profitable. Reviewing this before the call will help you ask the right questions.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <div class="w-14 h-14 bg-navy rounded-full flex items-center justify-center mx-auto mb-5">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Step 2: Know Your Investment Goals</h3>
+                <p class="text-muted text-sm leading-relaxed">Think about what matters most to you: passive income, portfolio diversification, tax efficiency, or long-term capital growth. This helps us match you with the right current offering.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <div class="w-14 h-14 bg-navy rounded-full flex items-center justify-center mx-auto mb-5">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-navy mb-3">Step 3: Prepare Your Questions</h3>
+                <p class="text-muted text-sm leading-relaxed">The introductory call is designed for you. Bring anything you want to ask. Our Investor Relations team has fielded thousands of investor questions over the past 16 years. Nothing is off limits.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breakout Videos Section -->
+<section class="py-16 md:py-20" style="background:var(--light-gray);">
+    <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-4">Get Prepared: Watch These Before Your Call</h2>
+        <p class="text-muted text-center mb-12 max-w-2xl mx-auto">Each video covers a key topic that investors ask about most often. Watch as many as you want before the call.</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Video 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Process</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">What Happens Next</h3>
+                    <p class="text-muted text-sm">A walkthrough of what to expect between now and your introductory call, including the confirmation process, the information you will receive, and how the call is structured.</p>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Qualification</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">Who This Is For (and Who It Is Not For)</h3>
+                    <p class="text-muted text-sm">Understand the accreditation requirements and investor characteristics that make 37th Parallel the right fit, and the transparent criteria for who should look elsewhere.</p>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Mechanism</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">How We Deliver Returns</h3>
+                    <p class="text-muted text-sm">A breakdown of the 37th Parallel investment approach: demographic-centered market selection, value-creation acquisitions, in-house institutional management, and exit liquidity focus.</p>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Market Timing</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">Is Now the Right Time to Invest?</h3>
+                    <p class="text-muted text-sm">An honest look at the current market environment and why 37th Parallel has remained profitable through every economic cycle since 2008, including the Great Recession and the pandemic.</p>
+                </div>
+            </div>
+            <!-- Video 5 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Liquidity</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">Understanding Your Liquidity</h3>
+                    <p class="text-muted text-sm">A clear explanation of hold periods, quarterly distributions, reporting access, and what to expect regarding your capital's availability during the investment.</p>
+                </div>
+            </div>
+            <!-- Video 6 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                <div class="aspect-video bg-navy/5 flex items-center justify-center relative">
+                    <div class="w-14 h-14 bg-navy/80 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white translate-x-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>
+                    </div>
+                    <span class="absolute top-3 left-3 px-2 py-0.5 bg-navy text-white text-xs font-bold rounded uppercase tracking-wider">Prep Checklist</span>
+                </div>
+                <div class="p-5">
+                    <h3 class="font-bold text-navy mb-2">Get Ready for Your Call</h3>
+                    <p class="text-muted text-sm">A quick rundown of what to bring, what to think about, and who you will be speaking with on the introductory call.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Who You Will Be Speaking With -->
+<section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-navy text-center mb-12">Who You Will Be Speaking With</h2>
+        <div class="grid md:grid-cols-3 gap-8 items-start">
+            <!-- Chad Doty -->
+            <div class="text-center">
+                <img src="images/CD_2024-Headshot.jpg" alt="Chad Doty, Managing Partner" class="w-36 h-36 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+                <h3 class="text-lg font-bold text-navy">Chad Doty</h3>
+                <p class="text-sm text-green font-semibold mb-3">Managing Partner</p>
+                <p class="text-muted text-sm leading-relaxed">Co-founded 37th Parallel Properties in 2008. Over 16 years of multifamily investment experience. Oversees all investment activity and capital development strategy.</p>
+            </div>
+            <!-- Don Duncan -->
+            <div class="text-center">
+                <img src="images/DD_2024-Headshot.jpg" alt="Don Duncan, Principal, Investor Relations" class="w-36 h-36 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+                <h3 class="text-lg font-bold text-navy">Don Duncan</h3>
+                <p class="text-sm text-green font-semibold mb-3">Principal, Investor Relations</p>
+                <p class="text-muted text-sm leading-relaxed">Leads investor communications and onboarding. Answers every question you have about our approach, performance, and current offerings.</p>
+            </div>
+            <!-- Kieran Donohue -->
+            <div class="text-center">
+                <img src="images/KJD_2024-Headshot.jpg" alt="Kieran Donohue, Director of Client Relations" class="w-36 h-36 rounded-full object-cover mx-auto mb-4 shadow-lg border-4 border-white">
+                <h3 class="text-lg font-bold text-navy">Kieran Donohue</h3>
+                <p class="text-sm text-green font-semibold mb-3">Director of Client Relations</p>
+                <p class="text-muted text-sm leading-relaxed">Manages investor relationships and introductory calls. Helps you determine whether 37th Parallel is the right fit for your portfolio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reschedule CTA -->
+<section class="py-12 bg-navy text-white text-center">
+    <div class="max-w-2xl mx-auto px-4">
+        <p class="text-lg mb-4">If the timing does not work or you need to reschedule, we would rather talk to you when you are ready.</p>
+        <a href="#" class="inline-block btn-green px-8 py-3 rounded text-sm font-bold uppercase tracking-wider">Reschedule Your Call</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark-navy text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <img src="images/37P-Logo_150px.png" alt="37th Parallel Properties" class="h-8 mb-4">
+                <p class="text-gray-400 text-sm">Multifamily real estate investment firm specializing in institutional-quality apartment communities in the South and Southeast US. Founded 2008. Richmond, Virginia.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Contact</h4>
+                <p class="text-gray-400 text-sm">3200 Rockbridge Street, Suite 200</p>
+                <p class="text-gray-400 text-sm">Richmond, VA 23230</p>
+                <p class="text-gray-400 text-sm mt-2">invest@37parallel.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-3 text-sm uppercase tracking-wider">Connect</h4>
+                <a href="https://www.linkedin.com/company/37parallel" class="text-gray-400 text-sm hover:text-white block">LinkedIn</a>
+                <a href="https://37parallel.com" class="text-gray-400 text-sm hover:text-white block mt-1">37parallel.com</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-6">
+            <p class="text-xs text-gray-500 leading-relaxed">This page is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any security. All investments involve risk, including the potential loss of principal. Past performance is not indicative of future results. All performance figures cited are gross returns on realized investments. Consult with your financial advisor before making any investment decision.</p>
+            <p class="text-xs text-gray-500 mt-3">2026 37th Parallel Properties. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
